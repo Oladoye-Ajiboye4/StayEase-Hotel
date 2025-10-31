@@ -1,0 +1,246 @@
+:root {
+    --primary-color: #00875A;
+    --secondary-color: #FFD700;
+    --text-color: #333333;
+    --light-text: #666666;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-color);
+}
+
+.navbar {
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand i {
+    font-size: 2rem;
+}
+
+.brand-text {
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+.location {
+    font-size: 0.875rem;
+    color: var(--light-text);
+    line-height: 1.2;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.btn-sign-in {
+    margin-left: 1rem;
+}
+
+.btn-sign-up {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.btn-sign-up:hover {
+    transform: translateY(-2px);
+    background-color: #007048;
+    border-color: #007048;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-color), #006B48);
+    padding-top: 7rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.subtitle {
+    color: var(--secondary-color);
+}
+
+.description {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.search-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.input-group-text {
+    background: transparent;
+    border-right: none;
+    color: var(--primary-color);
+}
+
+.form-control, .form-select {
+    border-left: none;
+    padding: 0.75rem 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+.search-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.125rem;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.search-btn:hover {
+    transform: translateY(-2px);
+    background-color: #007048;
+    border-color: #007048;
+}
+
+.action-buttons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-join {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.btn-join:hover {
+    transform: translateY(-2px);
+    background-color: #E6C200;
+    border-color: #E6C200;
+}
+
+.btn-tour {
+    padding: 1rem 2rem;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.btn-tour:hover {
+    transform: translateY(-2px);
+}
+
+.trust-badge {
+    margin-top: 3rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .btn-sign-in, .btn-sign-up {
+        margin: 0.5rem 0;
+        display: block;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .description br {
+        display: none;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn-join, .btn-tour {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding-top: 5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .search-box {
+        padding: 1.5rem;
+    }
+}
+
+.animate__animated {
+    animation-duration: 1s;
+}
+
+.animate__delay-1s {
+    animation-delay: 0.2s;
+}
+
+.animate__delay-2s {
+    animation-delay: 0.4s;
+}
+
+.animate__delay-3s {
+    animation-delay: 0.6s;
+}
+
+.animate__delay-4s {
+    animation-delay: 0.8s;
+}
