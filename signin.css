@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F8F8;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #019863;
+    border-color: #019863;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #017a50;
+    border-color: #017a50;
+}
+
+.btn-primary:focus, .btn-primary:active {
+    color: #fff;
+    background-color: #017a50;
+    border-color: #017a50;
+    box-shadow: 0 0 0 0.25rem rgba(1, 152, 99, 0.25);
+}
+
+.btn-outline-subtle {
+    color: #019863;
+    background-color: rgba(1, 152, 99, 0.1);
+    border-color: transparent;
+}
+
+.btn-outline-subtle:hover {
+    color: #fff;
+    background-color: #019863;
+    border-color: #019863;
+}
+
+.text-primary {
+    color: #019863 !important;
+}
+
+.form-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.form-control, .btn {
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
+.form-control:focus {
+    border-color: rgba(1, 152, 99, 0.5);
+    box-shadow: 0 0 0 0.25rem rgba(1, 152, 99, 0.25);
+}
+
+.input-group-text {
+    background-color: #fff;
+    border-right: 0;
+    color: #6c757d;
+}
+
+.input-group-text+.form-control {
+    border-left: 0;
+    padding-left: 0.25rem;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL'0, 'wght'400, 'GRAD'0, 'opsz'24;
+    vertical-align: middle;
+    font-size: 1.25rem;
+}
+
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    border-radius: 0;
+}
+
+.carousel-indicators,
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .carousel-item img {
+        height: 100%;
+    }
+
+    .carousel-container {
+        height: 100vh;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0f231c;
+        color: #e2e8f0;
+    }
+
+    .navbar-brand, .text-primary {
+        color: #fff !important;
+    }
+
+    .text-muted {
+        color: #94a3b8 !important;
+    }
+
+    .form-control, .input-group-text {
+        background-color: #334155;
+        color: #e2e8f0;
+        border-color: #475569;
+    }
+
+    .form-control::placeholder {
+        color: #94a3b8;
+    }
+
+    .btn-outline-subtle {
+        background-color: #334155;
+        border-color: #334155;
+        color: #e2e8f0;
+    }
+
+    .btn-outline-subtle:hover {
+        background-color: #475569;
+        color: #fff !important;
+    }
+}
